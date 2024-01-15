@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="food-header">
+        <h1>Recipe Finder</h1>
+    </div>
+
+    <div id="container">
+        <div id="first-col">
+            <h2>Choose <b>one or more</b> methods</h2>
+            <div id="methods">
+
+                    <input type="radio" name="method" id="search-key-btn" class="check" checked="checked">
+                    <label for="search-key-btn">Searching by Keyword</label>
+
+                    <input type="radio" name="method" id="allergy-btn" class="check">
+                    <label for="allergy-btn">Allergies</label>
+
+                    <input type="radio" name="method" id="diet-btn" class="check">
+                    <label for="diet-btn">Diets</label>
+
+                    <input type="radio" name="method" id="cal-btn" class="check">
+                    <label for="cal-btn">Calories</label>
+
+                    <input type="radio" name="method" id="nut-btn" class="check">
+                    <label for="nut-btn">Nutrients</label>
+
+                    <input type="radio" name="method" id="rec-screen" class="check">
+
+                    <input type="radio" name="method" id="load-screen" class="check">
+            </div>
+        </div>
+
+        <div id="second-col">
+            <div id="search-key-col"  class="screen">
+                <h3>Either enter ingredients that you have at home, like "lettuce and beef" or "cheese, spinach and bread", or the food item that you are looking for. We have tens of thousands of recipes, including international dishes.</h3>
+                
+                <h4>Ingredients</h4>
+                <div id="search-div">
+                    <input type="text" id="search" placeholder="Enter ingredients/food">
+                    <button type="button" id="submit" class="btn"><img src="Images/SearchIcon.png" id="search-img"></button>
+                </div>
+            </div>
+
+            <div id="allergy-col"  class="screen">
+                <div>
+                    <input type="checkbox" name="health=crustacean-free" value="Crustacean-free" id="crus-free" class="check_box">
+                    <label for="crus-free">Crustacean-free</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=dairy-free" value="Dairy-free" id="dairy-free" class="check_box">
+                    <label for="dairy-free">Dairy-free</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=egg-free" value="Egg-free" id="egg-free" class="check_box">
+                    <label for="egg-free">Egg-free</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=fish-free" value="Fish-free" id="fish-free" class="check_box">
+                    <label for="fish-free">Fish-free</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=gluten-free" value="Gluten-free" id="gluten-free" class="check_box">
+                    <label for="gluten-free">Gluten-free</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=celery-free" value="Celery-free" id="celery-free" class="check_box">
+                    <label for="celery-free">Celery-free</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=lupine-free" value="Lupine-free" id="lupine-free" class="check_box">
+                    <label for="lupine-free">Lupine-free</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" name="health=mustard-free" value="Mustard-free" id="mustard-free" class="check_box">
+                    <label for="mustard-free">Mustard-free</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=peanut-free" value="Peanut-free" id="peanut-free" class="check_box">
+                    <label for="peanut-free">Peanut-free</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=sesame-free" value="Sesame-free" id="sesame-free" class="check_box">
+                    <label for="sesame-free">Sesame-free</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=shellfish-free" value="Shellfish-free" id="shellfish-free" class="check_box">
+                    <label for="shellfish-free">Shellfish-free</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=soy-free" value="Soy-free" id="soy-free" class="check_box">
+                    <label for="soy-free">Soy-free</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=tree-nut-free" value="Tree-Nut-free" id="tree-nut-free" class="check_box">
+                    <label for="tree-nut-free">Tree-Nut-free</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=wheat-free" value="Wheat-free" id="wheat-free" class="check_box">
+                    <label for="wheat-free">Wheat-free</label>
+                </div>
+            </div>
+
+            <div id="diet-col"  class="screen">
+                <div>
+                    <input type="checkbox" name="health=alcohol-free" value="Alcohol" id="alcohol" class="check_box">
+                    <label for="alcohol">Alcohol</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="diet=balanced" value="Balanced" id="balanced" class="check_box">
+                    <label for="balanced">Balanced</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="diet=high-fiber" value="High Fiber" id="high-fiber" class="check_box">
+                    <label for="high-fiber">High Fiber</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="diet=high-protein" value="High Protein" id="high-protein" class="check_box">
+                    <label for="high-protein">High Protein</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=keto-friendly" value="Keto" id="keto" class="check_box">
+                    <label for="keto">Keto</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=kidney-friendly" value="Kidney Friendly" id="kidney-friendly" class="check_box">
+                    <label for="kidney-friendly">Kidney Friendly</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=kosher" value="Kosher" id="kosher" class="check_box">
+                    <label for="kosher">Kosher</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="diet=low-carb" value="Low Carb" id="low-carb" class="check_box">
+                    <label for="low-carb">Low Carb</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="diet=low-fat" value="Low Fat" id="low-fat" class="check_box">
+                    <label for="low-fat">Low Fat</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=low-potassium" value="Low Potassium" id="low-potassium" class="check_box">
+                    <label for="low-potassium">Low Potassium</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="diet=low-sodium" value="Low Sodium" id="low-sodium" class="check_box">
+                    <label for="low-sodium">Low Sodium</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=no-oil-added" value="No Oil Added" id="no-oil-added" class="check_box">
+                    <label for="no-oil-added">No Oil Added</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=low-sugar" value="No Sugar" id="no-sugar" class="check_box">
+                    <label for="no-sugar">No Sugar</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=paleo" value="Paleo" id="paleo" class="check_box">
+                    <label for="paleo">Paleo</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=pescatarian" value="Pescatarian" id="pescatarian" class="check_box">
+                    <label for="pescatarian">Pescatarian</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=pork-free" value="Pork Free" id="pork-free" class="check_box">
+                    <label for="pork-free">Pork Free</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=red-meat-free" value="Red Meat Free" id="red-meat-free" class="check_box">
+                    <label for="red-meat-free">Red Meat Free</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=sugar-conscious" value="Sugar Concious" id="sugar-concious" class="check_box">
+                    <label for="sugar-concious">Sugar Concious</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=vegan" value="Vegan" id="vegan" class="check_box">
+                    <label for="vegan">Vegan</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="health=vegetarian" value="Vegetarian" id="vegetarian" class="check_box">
+                    <label for="vegetarian">Vegetarian</label>
+                </div>
+            </div>
+
+            <div id="cal-col"  class="screen">
+                <h3>Input maximum desired calories per serving. For food database results default serving is 100g.</h3>
+
+                <input type="number" id="kcal-select">
+                <label for="kcal-select" id="kcal-label">kcal</label>
+                <input type="checkbox" class="check_box_cal" id="kcal-check-id">
+            </div>
+
+            <div id="nut-col"  class="screen">
+                <h1>Macronutrients</h1>
+                <div>
+                    <input type="checkbox" name="nutrients%5BFAT%5D=100%2B" value="Fat" id="fat" class="check_box">
+                    <label for="fat">Fat</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5BFASAT%5D=100%2B" value="Saturated Fat" id="saturated" class="check_box">
+                    <label for="saturated">Saturated Fat</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5BFATRN%5D=100%2B" value="Trans Fat" id="trans" class="check_box">
+                    <label for="trans">Trans Fat</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5BFAMS%5D=100%2B" value="Monosaturated Fat" id="monosaturated" class="check_box">
+                    <label for="monosaturated">Monosaturated Fat</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5BFAPU%5D=100%2B" value="Polyunsaturated Fat" id="polyunsaturated" class="check_box">
+                    <label for="polyunsaturated">Polyunsaturated Fat</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5BCHOCDF%5D=100%2B" value="Carbs" id="carbs" class="check_box">
+                    <label for="carbs">Carbs</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5BFIBTG%5D=100%2B" value="Fiber" id="fiber" class="check_box">
+                    <label for="fiber">Fiber</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5BSUGAR%5D=100%2B" value="Sugars" id="sugars" class="check_box">
+                    <label for="sugars">Sugars</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5BPROCNT%5D=100%2B" value="Protein" id="protein" class="check_box">
+                    <label for="protein">Protein</label>
+                </div>
+
+
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+
+                <h1>Micronutrients</h1>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5BCHOLE%5D=100%2B" value="Cholesterol" id="cholesterol" class="check_box">
+                    <label for="cholesterol">Cholesterol</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5BNA%5D=100%2B" value="Sodium" id="sodium" class="check_box">
+                    <label for="sodium">Sodium</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5BCA%5D=100%2B" value="Calcium" id="calcium" class="check_box">
+                    <label for="calcium">Calcium</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5BMG%5D=100%2B" value="Magnesium" id="magnesium" class="check_box">
+                    <label for="magnesium">Magnesium</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5BK%5D=100%2B" value="Potassium" id="potassium" class="check_box">
+                    <label for="potassium">Potassium</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5FE%5D=100%2B" value="Iron" id="iron" class="check_box">
+                    <label for="iron">Iron</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5P%5D=100%2B" value="Phosphorus" id="phosphorus" class="check_box">
+                    <label for="phosphorus">Phosphorus</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5VITA_RAE%5D=100%2B" value="Vitamin A" id="vitamin-a" class="check_box">
+                    <label for="vitamin-a">Vitamin A</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5VITC%5D=100%2B" value="Vitamin C" id="vitamin-c" class="check_box">
+                    <label for="vitamin-c">Vitamin C</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5THIA%5D=100%2B" value="Thiamin (B1)" id="thiamin" class="check_box">
+                    <label for="thiamin">Thiamin (B1)</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5RIBF%5D=100%2B" value="Riboflavin (B2)" id="riboflavin" class="check_box">
+                    <label for="riboflavin">Riboflavin (B2)</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5NIA%5D=100%2B" value="Niacin (B3)" id="niacin" class="check_box">
+                    <label for="niacin">Niacin (B3)</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5VITB6A%5D=100%2B" value="Vitamin B6" id="vitamin-b6" class="check_box">
+                    <label for="vitamin-b6">Vitamin B6</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5FOLDFE%5D=100%2B" value="Folate (Equivalent)" id="folate" class="check_box">
+                    <label for="folate">Folate (Equivalent)</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5VITB12%5D=100%2B" value="Vitamin B12" id="vitamin-b12" class="check_box">
+                    <label for="vitamin-b12">Vitamin B12</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5VITD%5D=100%2B" value="Vitamin D" id="vitamin-d" class="check_box">
+                    <label for="vitamin-d">Vitamin D</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5TOCPHA%5D=100%2B" value="Vitamin E" id="vitamin-e" class="check_box">
+                    <label for="vitamin-e">Vitamin E</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="nutrients%5VITK1%5D=100%2B" value="Vitamin K" id="vitamin-k" class="check_box">
+                    <label for="vitamin-k">Vitamin K</label>
+                </div>
+            </div>
+
+            <div id="rec-col" class="screen">
+                
+            </div>
+
+            <div id="load-col" class="screen">
+                <div id="new-col">
+                    <span class="loader"><span class="loader-inner"></span></span>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="third-col">
+            <div id="clicked-buttons"></div>
+            <button type="button" id="submit-right" class="btn">SEARCH</button>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

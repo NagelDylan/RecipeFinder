@@ -1,0 +1,543 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, b, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#methods{
+    display: flex;
+    flex-direction: column;
+}
+
+#container{
+    margin: 50px;
+    min-height: 500px;
+
+    display: flex;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); /* horizontal-offset vertical-offset blur-radius spread-radius color */
+    border-radius: 8px;
+}
+
+h2{
+    font-weight: 300;
+}
+
+h2 b{
+    font-weight: 400;
+}
+
+#second-col h3{
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(105, 105, 105);
+}
+
+#first-col h2{
+    margin-top: 15px;
+    color: rgb(140, 140, 140);
+}
+
+#first-col{
+    flex: 1 1 0;
+
+    padding: 10px;
+
+    border-right: 1px solid rgb(229, 229, 229);
+}
+
+#second-col{
+    flex: 2 1 0;
+    padding: 10px;
+}
+
+#third-col{
+    padding-top: 10px;
+    flex: 1 1 0;
+    padding-bottom: 15px;
+}
+
+#methods input {
+    display:none; 
+    width:0;
+}
+
+#methods label{
+    color: black;
+    text-decoration: none;
+    margin-top: 45px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#methods input:checked + label {
+    color: rgb(111, 195, 33);
+    outline: none;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+}
+
+#search-key-col h4{
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+#search{
+    font-size: 15px;
+    height: 35px;
+    width: 90%;
+    border: 1px solid rgb(140, 140, 140);
+    border-right: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding-left: 5px;
+}
+
+#search-div{
+    display: flex;
+}
+
+#submit img{
+    display: block;
+    height: 39px;  
+    width: 39px;
+}
+
+#submit{
+    display: inline-block;
+    height: 39px;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 39px;
+    border: none;
+    background-color: white;
+}
+
+#third-col{
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#third-col button{
+    color: white;
+    background-color: rgb(111, 195, 33);
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#third-col button:hover{
+    filter: brightness(80%);
+}
+
+#second-col button:hover{
+    filter: brightness(80%);
+}
+
+:focus{
+    outline: none;
+}
+
+
+/* THE EXACT SAME AS BELOW. TRY TO BRING INTO ONE */
+#allergy-col div{
+    background-color: rgb(241, 241, 241);
+    padding: 10px;
+    border-radius: 30px;
+    float: left;
+    margin: 9px;
+}
+
+#allergy-col input[type=checkbox] {
+    transform: scale(1.5);
+    margin-left: 5px;
+} 
+
+#allergy-col label{
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 14px;
+    color: rgb(105, 105, 105)
+}
+
+#clicked-buttons div{
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    float: left;
+    margin: 9px;
+}
+
+#clicked-buttons input[type=checkbox] {
+    transform: scale(1.5);
+    margin-left: 5px;
+} 
+
+#clicked-buttons label{
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 14px;
+    color: rgb(105, 105, 105)
+}
+
+#clicked-buttons{
+    margin-bottom: 40px;
+}
+
+#diet-col div{
+    background-color: rgb(241, 241, 241);
+    padding: 10px;
+    border-radius: 30px;
+    float: left;
+    margin: 9px;
+}
+
+#diet-col input[type=checkbox] {
+    transform: scale(1.5);
+    margin-left: 5px;
+} 
+
+#diet-col label{
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 14px;
+    color: rgb(105, 105, 105)
+}
+
+#nut-col h1{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#nut-col div{
+    background-color: rgb(241, 241, 241);
+    padding: 10px;
+    border-radius: 30px;
+    float: left;
+    margin: 9px;
+}
+
+#nut-col input[type=checkbox] {
+    transform: scale(1.5);
+    margin-left: 5px;
+} 
+
+#nut-col label{
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 14px;
+    color: rgb(105, 105, 105)
+}
+
+#cal-col h3{
+    border-bottom: 1px solid rgb(229, 229, 229);
+    padding-bottom: 15px;
+}
+
+#kcal-select{
+    font-size: 15px;
+    height: 35px;
+    width: 60px;
+    border: 1px solid rgb(140, 140, 140);
+    border-radius: 8px;
+    padding-left: 5px;
+    margin-top: 40px;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+#kcal-label{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#cal-col input[type=checkbox] {
+    transform: scale(1.5);
+    margin-left: 10px;
+} 
+
+#recipe-card{
+    display: flex;
+    flex-direction: column;
+}
+
+#top-row img{
+    width: 140px;
+    height: 140px;
+    margin-left: 8px;
+    margin-right: 40px;
+}
+
+#top-row{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+a{
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 6px;
+    color: black;
+    text-underline-offset: 4px;
+    line-height: 28px;
+}
+
+#rec-col h2{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(66, 66, 66);
+    line-height: 22px;
+}
+
+#num-val li{
+    font-weight: 500;
+    color: black;
+}
+
+#bottom-row{
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 20px;
+}
+
+#stat-seperator{
+    display: flex;
+    justify-content: space-between;
+}
+
+#stat-seperator ul{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(66, 66, 66);
+    line-height: 22px;
+}
+
+#bottom-row div{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#left-rec-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#left-rec-col h2{
+    color: rgb(66, 66, 66);
+    font-weight: 600;
+}
+
+h6{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h6 span{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#recipe-card{
+    margin-top: 30px;
+
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+#rec-col h1{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+#rec-col span{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+#rec-col{
+    padding-top: 10px;
+}
+
+#food-header{
+    width: 100%;
+    height: 200px;
+    background-image: url(Images/FoodBackground.jpg);
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#food-header h1{
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(66, 66, 66);
+}
+
+#footer{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(60, 65, 80);
+}
+
+
+@media screen and (max-width: 932px){
+    #methods input:checked + label {
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    #bottom-row{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #stat-seperator{
+        margin-top: 40px;
+    }
+}
+
+.loader {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 4px solid black;
+    animation: loader 2s infinite ease;
+  }
+  
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    height: max-content;
+    background-color: black;
+    animation: loader-inner 2s infinite ease-in;
+  }
+
+  #load-col {
+    height: 100%;
+  }
+
+ #new-col{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+  
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    25% {
+      transform: rotate(180deg);
+    }
+    
+    50% {
+      transform: rotate(180deg);
+    }
+    
+    75% {
+      transform: rotate(360deg);
+    }
+    
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes loader-inner {
+    0% {
+      height: 0%;
+    }
+    
+    25% {
+      height: 0%;
+    }
+    
+    50% {
+      height: 100%;
+    }
+    
+    75% {
+      height: 100%;
+    }
+    
+    100% {
+      height: 0%;
+    }
+  }
