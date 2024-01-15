@@ -14,7 +14,7 @@ Welcome to the Recipe Finder, an innovative app designed for culinary enthusiast
 
 ## Installation
 
-The Recipe Finder is accessible directly through the web at [Dylan.nagelbros.com](https://Dylan.nagelbros.com). No installation is necessary - just visit the website and start using the app!
+The Recipe Finder is accessible directly through the web at [dylan.nagelbros.com](https://dylan.nagelbros.com). No installation is necessary - just visit the website and start using the app!
 
 ## How to Use
 
