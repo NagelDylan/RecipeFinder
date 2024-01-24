@@ -467,6 +467,32 @@ h6 span{
     #stat-seperator{
         margin-top: 40px;
     }
+
+    #top-row{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #top-row img{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    #top-row br{
+        display: none;
+    }
+
+    #top-row h2{
+        margin-top: 10px;
+    }
+
+    #second-col{
+        margin-top: 50px;
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 785px){
